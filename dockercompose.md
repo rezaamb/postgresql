@@ -1,23 +1,9 @@
-# ساختار پیشنهادی ریپو
-```
-postgres-compose/
-├─ docker-compose.yml
-├─ .env.example
-├─ Makefile
-├─ .gitlab-ci.yml
-└─ README.md
-```
 ```bash
 mkdir -p /root/apps/postgres
 cd /root/apps/postgres
 vim docker-compose.yml
 ```
-```bash
-docker compose up -d
-docker compose logs -f postgres
-```
-
-create ```bash vim docker-compose.yml``` :
+create ``` vim docker-compose.yml``` :
 ```bash
 services:
   postgres:
@@ -34,6 +20,13 @@ services:
     restart: always
 
 ```
+
+```bash
+docker compose up -d
+docker compose logs -f postgres
+```
+
+
 
 for test : 
 ```bash
